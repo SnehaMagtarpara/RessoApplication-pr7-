@@ -31,6 +31,12 @@ class AccountPage: UIViewController,UIImagePickerControllerDelegate & UINavigati
     }
     
     
+    @IBAction func arrorButtonAction(_ sender: Any) {
+        let n = storyboard?.instantiateViewController(withIdentifier: "PremiumPage") as! PremiumPage
+        navigationController?.pushViewController(n, animated: true)
+    }
+    
+    
     @IBAction func navigetArrowAction(_ sender: Any) {
         let n = storyboard?.instantiateViewController(withIdentifier: "PremiumPage") as! PremiumPage
         navigationController?.pushViewController(n, animated: true)

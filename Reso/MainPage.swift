@@ -54,7 +54,7 @@ class MainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
        return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 300, height: 742)
+        return CGSize(width: 390, height: 742)
         
     }
 //    func progress()

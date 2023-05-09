@@ -20,28 +20,22 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setButton()
        
     }
-
     @IBAction func continuePhoneButtonAction(_ sender: UIButton) {
         
         let navigation = storyboard?.instantiateViewController(withIdentifier:"ContinuePhone" ) as! ContinuePhone
         navigationController?.pushViewController(navigation, animated: true)
     }
-    
-    
     @IBAction func continueFacebookButtonAction(_ sender: UIButton) {
         showalert(title:"This allows the app and website to share infirmation about you." )
     }
-    
-    
     @IBAction func continueGoogleButtonAction(_ sender: UIButton) {
         showalert(title:"This allows the app and website to share infirmation about you." )
         
         
     }
-    
-    
     @IBAction func continueAppleButtonAction(_ sender: UIButton) {
         
         let navigation = storyboard?.instantiateViewController(withIdentifier:"ContinueApple" ) as! ContinueApple
@@ -49,8 +43,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
         present(navigation, animated: true, completion: nil)
 
     }
-    
-    
     func showalert(title:String)
     {
         let alert = UIAlertController(title: "Resso Wants to Use facebook.com to Sidn In", message: title, preferredStyle: .alert)
@@ -61,10 +53,18 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
         }))
         present(alert,animated:true,completion: nil)
     }
-    
-    
-    
-    
+    func setButton()
+    {
+        continuePhoneButton.layer.cornerRadius = 20
+        continuePhoneButton.layer.masksToBounds = true
+        continuefacebookButton.layer.cornerRadius = 20
+        continuefacebookButton.layer.masksToBounds = true
+        continueGoogleButton.layer.cornerRadius = 20
+        continueGoogleButton.layer.masksToBounds = true
+        continueAppleButton.layer.cornerRadius = 20
+        continueAppleButton.layer.masksToBounds = true
+        
+    }
     
     
 }
