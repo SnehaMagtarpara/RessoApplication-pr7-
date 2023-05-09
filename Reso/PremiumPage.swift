@@ -10,12 +10,13 @@ import UIKit
 class PremiumPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
    
     @IBOutlet weak var cv: UICollectionView!
-    
-      var bannerImage = [UIImage(named:"benar 1"),UIImage(named:"benar 2"),UIImage(named:"benar 3"),UIImage(named:"benar 4"),UIImage(named:"benar 5")]
+    @IBOutlet weak var getPremiumLabel: UILabel!
+    var bannerImage = [UIImage(named:"benar 1"),UIImage(named:"benar 2"),UIImage(named:"benar 3"),UIImage(named:"benar 4"),UIImage(named:"benar 5")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getPremiumLabel.layer.cornerRadius = 15
+        getPremiumLabel.layer.masksToBounds = true
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -29,7 +30,7 @@ class PremiumPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 385, height: 400)
+        return CGSize(width: 385, height: 522)
     }
     
 
