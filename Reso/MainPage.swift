@@ -29,14 +29,17 @@ class MainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     
+ 
     @IBAction func forYouButtonAction(_ sender: UIButton) {
         
-        let navigation = storyboard?.instantiateViewController(withIdentifier:"ForYou" ) as! ForYou
-        navigation.mynev = self.navigationController
-        present(navigation, animated: true, completion: nil)
+            let navigation = storyboard?.instantiateViewController(withIdentifier:"ForYou" ) as! ForYou
+            navigation.mynev = self.navigationController
+            present(navigation, animated: true, completion: nil)
 
-        
     }
+    
+        
+    
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,14 +47,14 @@ class MainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MYCollectionViewCell
-        cell.img.image = img[indexPath.row]
-        cell.songNameLabel.text = songName[indexPath.row]
-        cell.lyricsLabel.text = lyrics[indexPath.row]
+        let cell3 = cv.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as! MYCollectionViewCell
+        cell3.img.image = img[indexPath.row]
+        cell3.songNameLabel.text = songName[indexPath.row]
+        cell3.lyricsLabel.text = lyrics[indexPath.row]
       //  self.progressBar.progress = 0.0
         //self.progress()
         
-       return cell
+       return cell3
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 390, height: 742)

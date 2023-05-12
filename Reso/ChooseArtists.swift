@@ -30,20 +30,20 @@ class ChooseArtists: UIViewController,UICollectionViewDelegate,UICollectionViewD
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = cv.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell2
-        cell.img.image = img[indexPath.row]
-        cell.nameLabel.text = name[indexPath.row]
-        cell.img.layer.cornerRadius = cell.img.frame.size.width/2
+        let cell2 = cv.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! CollectionViewCell2
+        cell2.img.image = img[indexPath.row]
+        cell2.nameLabel.text = name[indexPath.row]
+        cell2.img.layer.cornerRadius = cell2.img.frame.size.width/2
         if selectcell == indexPath.row
         {
-            cell.img2.image = UIImage(systemName: "heart.circle.fill")
+            cell2.img2.image = UIImage(systemName: "heart.circle.fill")
         }
         else
         {
-            cell.img2.image = UIImage(systemName: "heart.circle")
+            cell2.img2.image = UIImage(systemName: "heart.circle")
         }
-        return cell
-        return cell
+        return cell2
+        return cell2
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectcell = indexPath.row

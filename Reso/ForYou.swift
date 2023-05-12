@@ -10,11 +10,15 @@ import UIKit
 class ForYou: UIViewController {
 
     
+    @IBOutlet weak var pop: UIView!
     
     var mynev : UINavigationController?
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.viewDidLoad()
+        view.alpha = 0
+        pop.layer.cornerRadius = 10
 
     }
     override func viewDidAppear(_ animated: Bool) {
