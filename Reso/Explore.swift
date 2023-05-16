@@ -15,9 +15,13 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     @IBOutlet weak var cv3: UICollectionView!
     @IBOutlet weak var cv2: UICollectionView!
     
-  
+    @IBOutlet weak var cv5: UICollectionView!
+    
+    @IBOutlet weak var cv4: UICollectionView!
     @IBOutlet weak var cv: UICollectionView!
     @IBOutlet weak var songcatchlabel: UILabel!
+    
+    
     
     
     
@@ -37,10 +41,29 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     var song4 = ["Retro Gold","OOs Hip Hop","Punjabi Pop 2010s","90s Bollwwood","Classc R&B 2010s","Tamil Retro Hits","Unfading 90s","90s Tamil Chill","Mollywood Romance","Gujarati"]
     var singer4 = ["Kumar Sanu,Alka Yagnik","Raftar","Diljit Disanjh,Param Singh","Lata Mangeshkar","Kesarabai Kerkar","Amrinder Gill","Mano,Unni Menon","Radhika Thailak,K.J.","Unni Menon,Sujath","Haricharan,Shahab"]
     
-    var img5 = [UIImage(named:"5.1"),UIImage(named:"5.2"),UIImage(named:"5.3")]
-    var songName5 = ["Ariyoshi synthia","Bollywood Party","Arijit Singh"]
-    var singerName5 = ["Curated by Resso","Naksh Aziz, Viashl","Vishal-Shekhar,Nikhil"]
-
+    var img5 = [UIImage(named:"5.1"),UIImage(named:"5.2"),UIImage(named:"5.3"),UIImage(named:"5.4"),UIImage(named:"5.5"),UIImage(named:"5.6"),UIImage(named:"5.7"),UIImage(named:"5.8"),UIImage(named:"5.9"),UIImage(named:"6.0")]
+    
+    var songName5 = ["Golden Era","Bollywood Party","Retro Gold","90s Bollywood","70s Bollywood","Mathudi Dixit","90s Bollywood Hits","90s Sad Song","80s Bollywood","Salman Kham"]
+    var singerName5 = ["Curated by Resso","Naksh Aziz, Viashl","Vishal-Shekhar,Nikhil","Amit Kumar","Suresh Wadkar","Sadhana Sargam","Vishal-Shekhar","saDhana Sargam","Sadhna Saegam","Nikhil"]
+    
+    var img6 = [UIImage(named:"6.1"),UIImage(named:"6.2"),UIImage(named:"6.3"),UIImage(named:"6.4"),UIImage(named:"6.5"),UIImage(named:"6.6"),UIImage(named:"6.7"),UIImage(named:"6.8"),UIImage(named:"6.9"),UIImage(named:"7.0")]
+    var singerName6 = ["King,KingThe beatz","Dino James,Kaprila","MC Stan,MC Altaf","Arijit Singh","KE$NA,Fotty Seven","DIVINE,MC Altaf","Harnoor,Karan Randhwa","Bali,Fotty Seven,Dj Karan","Emiway Bantai,Yo Yo Honet Singh","AP Dhilon,intense,Gurinder Gill"]
+    
+    var im1 = [UIImage(named:"11.1"),UIImage(named:"11.1")]
+    var songname7 = ["Apna Bana Le","Apna Bana Le"]
+    var singerName7 = ["Arijit Singh,Sachin-jigar","Arijit Singh,Sachin-jigar"]
+    
+    var im2 = [UIImage(named:"11.2"),UIImage(named:"11.2")]
+    var songname8 = ["Malang Sajna","Malang Sajna"]
+    var singerName8 = ["Sachet  Tandon","Sachet  Tandon"]
+    
+    var im3 = [UIImage(named:"11.3"),UIImage(named:"11.3")]
+    var songName9 = ["Kahani Suno2.0","O Bedardeya"]
+    var singername9 = ["Kaifi Khali","Pritam,Arijit Singh"]
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         songcatchlabel.layer.cornerRadius = 22
@@ -57,9 +80,18 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         else if collectionView == self.cv2{
             return img4.count
         }
-        else
+        else if collectionView == self.cv3
         {
             return img5.count
+        }
+        else if collectionView == self.cv4
+        {
+            return img6.count
+        }
+        else
+        {
+            return im1.count
+            
         }
             
         
@@ -94,7 +126,7 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             
             return cell5
         }
-        else
+        else if collectionView == self.cv3
         {
             let cell6 = cv3.dequeueReusableCell(withReuseIdentifier: "cell6", for: indexPath) as! CollectionViewCell7
                     cell6.img5.image = img5[indexPath.row]
@@ -104,6 +136,32 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell6
             
         }
+        else if collectionView == self.cv4
+        {
+            let cell7 = cv4.dequeueReusableCell(withReuseIdentifier: "cell7", for: indexPath) as! CollectionViewCell8
+                    cell7.img6.image = img6[indexPath.row]
+                    cell7.singerName6.text = singerName6[indexPath.row]
+            
+            return cell7
+            
+        }
+        else
+        {
+            let cell8 = cv5.dequeueReusableCell(withReuseIdentifier: "cell8", for: indexPath) as! CollectionViewCell9
+                    cell8.im1.image = im1[indexPath.row]
+                    cell8.SongName7.text = songname7[indexPath.row]
+                    cell8.singerName7.text = singerName7[indexPath.row]
+            cell8.im2.image = im2[indexPath.row]
+            cell8.songName8.text = songname8[indexPath.row]
+            cell8.singerName8.text = singerName8[indexPath.row]
+            cell8.im3.image = im3[indexPath.row]
+            cell8.songname9.text = songName9[indexPath.row]
+            cell8.singerName9.text = singername9[indexPath.row]
+                   
+            return cell8
+            
+        }
+        
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -112,12 +170,21 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return CGSize(width: 373, height: 312)
         }
         else if collectionView == self.cv2{
-            return CGSize(width: 370, height: 188)
+            return CGSize(width: 147, height: 186)
         }
-        else
+        else if collectionView == self.cv3
         {
-            return CGSize(width: 370, height: 188)
+            return CGSize(width: 147, height: 186)
         }
+        else if collectionView == self.cv4
+        {
+            return CGSize(width: 147, height: 186)
+        }
+        else 
+        {
+            return CGSize(width: 373, height: 312)
+        }
+        
         
 
             

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D32097642A0CAB200084EAAD /* CollectionViewCell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32097632A0CAB200084EAAD /* CollectionViewCell5.swift */; };
+		D32640612A1344530012BD52 /* CollectionViewCell8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32640602A1344530012BD52 /* CollectionViewCell8.swift */; };
+		D32640632A134B410012BD52 /* CollectionViewCell9.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32640622A134B410012BD52 /* CollectionViewCell9.swift */; };
+		D32640652A1357570012BD52 /* CollectionViewCell10.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32640642A1357570012BD52 /* CollectionViewCell10.swift */; };
 		D3373C5629F6C84A00DADE32 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = D3373C5529F6C84A00DADE32 /* DPOTPView */; };
 		D34432F32A031A3400A9021A /* ForYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34432F22A031A3400A9021A /* ForYou.swift */; };
 		D3446DBB29F81752000C9BF6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3446DBA29F81752000C9BF6 /* CollectionViewCell.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		D32097632A0CAB200084EAAD /* CollectionViewCell5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell5.swift; sourceTree = "<group>"; };
+		D32640602A1344530012BD52 /* CollectionViewCell8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell8.swift; sourceTree = "<group>"; };
+		D32640622A134B410012BD52 /* CollectionViewCell9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell9.swift; sourceTree = "<group>"; };
+		D32640642A1357570012BD52 /* CollectionViewCell10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell10.swift; sourceTree = "<group>"; };
 		D34432F22A031A3400A9021A /* ForYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYou.swift; sourceTree = "<group>"; };
 		D3446DBA29F81752000C9BF6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D35A47E02A0A203F00AB2EE9 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		D367F62329F26A5A00D8B4A7 = {
 			isa = PBXGroup;
 			children = (
+				D32640642A1357570012BD52 /* CollectionViewCell10.swift */,
+				D32640622A134B410012BD52 /* CollectionViewCell9.swift */,
 				D367F62E29F26A5A00D8B4A7 /* Reso */,
 				D367F62D29F26A5A00D8B4A7 /* Products */,
 			);
@@ -113,6 +121,7 @@
 				D367F63129F26A5A00D8B4A7 /* SceneDelegate.swift */,
 				D367F63329F26A5A00D8B4A7 /* ViewController.swift */,
 				D367F63529F26A5A00D8B4A7 /* Main.storyboard */,
+				D32640602A1344530012BD52 /* CollectionViewCell8.swift */,
 				D38E57802A0E105600C6704A /* CollectionViewCell6.swift */,
 				D38D4EB72A04D1990093615E /* PremiumPage.swift */,
 				D38D4EB92A04D4AE0093615E /* CollectionViewCell4.swift */,
@@ -211,7 +220,9 @@
 			files = (
 				D3C3A25529F347E300ED427C /* OtpPage.swift in Sources */,
 				D367F63429F26A5A00D8B4A7 /* ViewController.swift in Sources */,
+				D32640632A134B410012BD52 /* CollectionViewCell9.swift in Sources */,
 				D394246029FAD485008D0B5C /* MYCollectionViewCell.swift in Sources */,
+				D32640652A1357570012BD52 /* CollectionViewCell10.swift in Sources */,
 				D3ACE81529F6E31600E1917E /* MusicOption.swift in Sources */,
 				D32097642A0CAB200084EAAD /* CollectionViewCell5.swift in Sources */,
 				D38250591FFA8B5A0061BE1F /* AccountPage.swift in Sources */,
@@ -227,6 +238,7 @@
 				D39956F729F97BD400A7729F /* CollectionViewCell2.swift in Sources */,
 				D3B9FAE529FAC88900258F26 /* TabBar.swift in Sources */,
 				D367F63A29F26A5A00D8B4A7 /* Reso.xcdatamodeld in Sources */,
+				D32640612A1344530012BD52 /* CollectionViewCell8.swift in Sources */,
 				D38E57812A0E105600C6704A /* CollectionViewCell6.swift in Sources */,
 				D367F63229F26A5A00D8B4A7 /* SceneDelegate.swift in Sources */,
 				D39956F529F97B3200A7729F /* ChooseArtists.swift in Sources */,
