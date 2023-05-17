@@ -15,6 +15,8 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     @IBOutlet weak var cv3: UICollectionView!
     @IBOutlet weak var cv2: UICollectionView!
     
+    @IBOutlet weak var cv7: UICollectionView!
+    @IBOutlet weak var cv6: UICollectionView!
     @IBOutlet weak var cv5: UICollectionView!
     
     @IBOutlet weak var cv4: UICollectionView!
@@ -61,6 +63,12 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     var songName9 = ["Kahani Suno2.0","O Bedardeya"]
     var singername9 = ["Kaifi Khali","Pritam,Arijit Singh"]
     
+    var image7 = [UIImage(named:"7.1"),UIImage(named:"7.2"),UIImage(named:"7.3"),UIImage(named:"7.4"),UIImage(named:"7.5"),UIImage(named:"7.6"),UIImage(named:"7.7"),UIImage(named:"7.8"),UIImage(named:"7.9"),UIImage(named:"8.0")]
+    var song7 = ["Dholida","Prityu No Rang","Valam Aavo Ne","Dhun Lagi","Chand Ne Kaho","Ude Re Gulal","Pa Pa Pagli","Holi Avi", "Valida","Mahahetvali"]
+   
+    var image8 = [UIImage(named:"8.1"),UIImage(named:"8.2"),UIImage(named:"8.3"),UIImage(named:"8.4"),UIImage(named:"8.5"),UIImage(named:"8.6"),UIImage(named:"8.7"),UIImage(named:"8.8"),UIImage(named:"8.9"),UIImage(named:"9.0")]
+    var song8 = ["Top Hits Malayalam","Breakup Malayalam","Adipoli Dance Hits","New in Malayalam","Unfading 10s malayalam","Drive Poyalo","top Hits Mollywood","90s Romantic Malayalam","Chill Cheyyu Aliya","Malayalam Indie& Romantic"]
+    var singer8 = ["Sachin Warrier","Sujatha,Shreya Ghoshal","Rimi Tomy","Haricharan","Sachin Warrier","Mohanlal,Tippu","Sachin Warrier","G Venugopal","G Venugopal","Shreya Ghoshal"]
    
     
     
@@ -88,10 +96,18 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return img6.count
         }
-        else
+        else if collectionView == self.cv5
         {
             return im1.count
             
+        }
+        else if collectionView == self.cv6
+        {
+            return image7.count
+        }
+        else
+        {
+            return image8.count
         }
             
         
@@ -145,7 +161,7 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell7
             
         }
-        else
+        else if collectionView == self.cv5
         {
             let cell8 = cv5.dequeueReusableCell(withReuseIdentifier: "cell8", for: indexPath) as! CollectionViewCell9
                     cell8.im1.image = im1[indexPath.row]
@@ -159,6 +175,25 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             cell8.singerName9.text = singername9[indexPath.row]
                    
             return cell8
+            
+        }
+        else if collectionView == self.cv6
+        {
+            let cell9 = cv6.dequeueReusableCell(withReuseIdentifier: "cell9", for: indexPath) as! CollectionViewCell10
+            cell9.image1.image = image7[indexPath.row]
+            cell9.songName10.text = song7[indexPath.row]
+           
+            return cell9
+            
+        }
+        else
+        {
+            let cell10 = cv7.dequeueReusableCell(withReuseIdentifier: "cell10", for: indexPath) as! CollectionViewCell11
+            cell10.image8.image = image8[indexPath.row]
+            cell10.songnameLabel8.text = song8[indexPath.row]
+            cell10.singerNameLabel8.text = singer8[indexPath.row]
+           
+            return cell10
             
         }
         
@@ -180,9 +215,18 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return CGSize(width: 147, height: 186)
         }
-        else 
+        else if collectionView == self.cv5
         {
             return CGSize(width: 373, height: 312)
+        }
+        else if collectionView == self.cv6
+        {
+            return CGSize(width: 147, height: 165)
+            
+        }
+        else
+        {
+            return CGSize(width: 147, height: 186)
         }
         
         

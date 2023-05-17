@@ -30,7 +30,8 @@ class PremiumPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 385, height: 401)
+        return CGSize(width: 385, height: 300
+        )
     }
     
 

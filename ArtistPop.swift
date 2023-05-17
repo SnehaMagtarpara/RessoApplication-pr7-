@@ -1,0 +1,31 @@
+//
+//  ArtistPop.swift
+//  Reso
+//
+//  Created by R93 on 17/05/23.
+//
+
+import UIKit
+
+class ArtistPop: UIViewController {
+
+    @IBOutlet weak var addArtistsButton: UIButton!
+    var mynev : UINavigationController?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.alpha = 0
+        addArtistsButton.layer.cornerRadius = 20
+        addArtistsButton.layer.masksToBounds = true
+        dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.1, delay: 0, options: .curveLinear){
+            self.view.alpha = 1
+        }
+    }
+
+    
+
+}

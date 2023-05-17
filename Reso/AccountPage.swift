@@ -13,6 +13,7 @@ class AccountPage: UIViewController,UIImagePickerControllerDelegate & UINavigati
     @IBOutlet weak var navigetArrow: UIButton!
     
     
+    @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var img: UIImageView!
     
     @IBOutlet weak var addButton: UIButton!
@@ -35,6 +36,41 @@ class AccountPage: UIViewController,UIImagePickerControllerDelegate & UINavigati
         let n = storyboard?.instantiateViewController(withIdentifier: "PremiumPage") as! PremiumPage
         navigationController?.pushViewController(n, animated: true)
     }
+    
+    
+    @IBAction func segmentAction(_ sender: UISegmentedControl) {
+       if segment.selectedSegmentIndex == 0
+       {
+       }
+       else if segment.selectedSegmentIndex == 1
+        {
+           
+           let navigation = storyboard?.instantiateViewController(withIdentifier:"ArtistPop" ) as! ArtistPop
+           navigation.mynev = self.navigationController
+           present(navigation, animated: true, completion: nil)
+        }
+        else if segment.selectedSegmentIndex == 2
+        {
+            let navigation = storyboard?.instantiateViewController(withIdentifier:"Downloadpop" ) as! Downloadpop
+            navigation.mynev = self.navigationController
+            present(navigation, animated: true, completion: nil)
+            
+        }
+        else
+        {
+            let navigation = storyboard?.instantiateViewController(withIdentifier:"historyPop" ) as! historyPop
+            navigation.mynev = self.navigationController
+            present(navigation, animated: true, completion: nil)
+        }
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     
     
     @IBAction func navigetArrowAction(_ sender: Any) {

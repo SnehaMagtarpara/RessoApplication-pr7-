@@ -38,6 +38,11 @@
 		D3C3A25329F345D500ED427C /* AgePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3A25229F345D500ED427C /* AgePage.swift */; };
 		D3C3A25529F347E300ED427C /* OtpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3A25429F347E300ED427C /* OtpPage.swift */; };
 		D3C3A25929F3491900ED427C /* DPOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3A25829F3491900ED427C /* DPOTPView.swift */; };
+		D3CC135B2A14969800BE1C4A /* CollectionViewCell11.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC135A2A14969800BE1C4A /* CollectionViewCell11.swift */; };
+		D3CC135D2A14A5FC00BE1C4A /* ArtistPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC135C2A14A5FC00BE1C4A /* ArtistPop.swift */; };
+		D3CC135F2A14AB0000BE1C4A /* Downloadpop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC135E2A14AB0000BE1C4A /* Downloadpop.swift */; };
+		D3CC13612A14ABB200BE1C4A /* historyPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC13602A14ABB200BE1C4A /* historyPop.swift */; };
+		D3CC13632A14AC6500BE1C4A /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC13622A14AC6500BE1C4A /* DownloadCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +78,11 @@
 		D3C3A25229F345D500ED427C /* AgePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePage.swift; sourceTree = "<group>"; };
 		D3C3A25429F347E300ED427C /* OtpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpPage.swift; sourceTree = "<group>"; };
 		D3C3A25829F3491900ED427C /* DPOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPOTPView.swift; sourceTree = "<group>"; };
+		D3CC135A2A14969800BE1C4A /* CollectionViewCell11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell11.swift; sourceTree = "<group>"; };
+		D3CC135C2A14A5FC00BE1C4A /* ArtistPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistPop.swift; sourceTree = "<group>"; };
+		D3CC135E2A14AB0000BE1C4A /* Downloadpop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloadpop.swift; sourceTree = "<group>"; };
+		D3CC13602A14ABB200BE1C4A /* historyPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyPop.swift; sourceTree = "<group>"; };
+		D3CC13622A14AC6500BE1C4A /* DownloadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,11 @@
 		D367F62329F26A5A00D8B4A7 = {
 			isa = PBXGroup;
 			children = (
+				D3CC13622A14AC6500BE1C4A /* DownloadCell.swift */,
+				D3CC13602A14ABB200BE1C4A /* historyPop.swift */,
+				D3CC135E2A14AB0000BE1C4A /* Downloadpop.swift */,
+				D3CC135C2A14A5FC00BE1C4A /* ArtistPop.swift */,
+				D3CC135A2A14969800BE1C4A /* CollectionViewCell11.swift */,
 				D32640642A1357570012BD52 /* CollectionViewCell10.swift */,
 				D32640622A134B410012BD52 /* CollectionViewCell9.swift */,
 				D367F62E29F26A5A00D8B4A7 /* Reso */,
@@ -223,6 +238,7 @@
 				D32640632A134B410012BD52 /* CollectionViewCell9.swift in Sources */,
 				D394246029FAD485008D0B5C /* MYCollectionViewCell.swift in Sources */,
 				D32640652A1357570012BD52 /* CollectionViewCell10.swift in Sources */,
+				D3CC13632A14AC6500BE1C4A /* DownloadCell.swift in Sources */,
 				D3ACE81529F6E31600E1917E /* MusicOption.swift in Sources */,
 				D32097642A0CAB200084EAAD /* CollectionViewCell5.swift in Sources */,
 				D38250591FFA8B5A0061BE1F /* AccountPage.swift in Sources */,
@@ -235,8 +251,12 @@
 				D367F63029F26A5A00D8B4A7 /* AppDelegate.swift in Sources */,
 				D3C3A24F29F333CD00ED427C /* ContinuePhone.swift in Sources */,
 				D38D4EBA2A04D4AE0093615E /* CollectionViewCell4.swift in Sources */,
+				D3CC135D2A14A5FC00BE1C4A /* ArtistPop.swift in Sources */,
 				D39956F729F97BD400A7729F /* CollectionViewCell2.swift in Sources */,
+				D3CC135B2A14969800BE1C4A /* CollectionViewCell11.swift in Sources */,
+				D3CC13612A14ABB200BE1C4A /* historyPop.swift in Sources */,
 				D3B9FAE529FAC88900258F26 /* TabBar.swift in Sources */,
+				D3CC135F2A14AB0000BE1C4A /* Downloadpop.swift in Sources */,
 				D367F63A29F26A5A00D8B4A7 /* Reso.xcdatamodeld in Sources */,
 				D32640612A1344530012BD52 /* CollectionViewCell8.swift in Sources */,
 				D38E57812A0E105600C6704A /* CollectionViewCell6.swift in Sources */,
