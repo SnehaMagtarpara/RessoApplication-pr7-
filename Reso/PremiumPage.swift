@@ -11,7 +11,7 @@ class PremiumPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
    
     @IBOutlet weak var cv: UICollectionView!
     @IBOutlet weak var getPremiumLabel: UILabel!
-    var bannerImage = [UIImage(named:"benar 1"),UIImage(named:"benar 2"),UIImage(named:"benar 3"),UIImage(named:"benar 4"),UIImage(named:"benar 5")]
+    var bannerImage = [UIImage(named:"resso 1"),UIImage(named:"resso 2"),UIImage(named:"resso 3"),UIImage(named:"resso 4"),UIImage(named:"resso 5")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,7 @@ class PremiumPage: UIViewController,UICollectionViewDelegate,UICollectionViewDat
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 385, height: 300
-        )
+        return CGSize(width: 390, height: 449)
     }
     
 

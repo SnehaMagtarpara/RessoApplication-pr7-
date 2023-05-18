@@ -100,8 +100,6 @@
 		D367F62329F26A5A00D8B4A7 = {
 			isa = PBXGroup;
 			children = (
-				D3CC13622A14AC6500BE1C4A /* DownloadCell.swift */,
-				D3CC13602A14ABB200BE1C4A /* historyPop.swift */,
 				D3CC135E2A14AB0000BE1C4A /* Downloadpop.swift */,
 				D3CC135C2A14A5FC00BE1C4A /* ArtistPop.swift */,
 				D3CC135A2A14969800BE1C4A /* CollectionViewCell11.swift */,
@@ -124,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				D32097632A0CAB200084EAAD /* CollectionViewCell5.swift */,
+				D3CC13622A14AC6500BE1C4A /* DownloadCell.swift */,
+				D3CC13602A14ABB200BE1C4A /* historyPop.swift */,
 				D35A47E02A0A203F00AB2EE9 /* Explore.swift */,
 				D3B5C71F2A0E14F900209139 /* CollectionViewCell7.swift */,
 				D34432F22A031A3400A9021A /* ForYou.swift */,

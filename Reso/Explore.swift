@@ -228,12 +228,19 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return CGSize(width: 147, height: 186)
         }
-        
-        
-
-            
-       
-    }
     
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigation(datanumber: singerName[indexPath.row], dataname: songName[indexPath.row], dataimage: image[indexPath.row]!)
+    }
+   
+    func navigation(datanumber:String,dataname:String,dataimage:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "ViewController1") as! ViewController1
+        naviget.number = datanumber
+        naviget.name = dataname
+        naviget.image = dataimage
+        navigationController?.pushViewController(naviget, animated: true)
+    }
 
 }

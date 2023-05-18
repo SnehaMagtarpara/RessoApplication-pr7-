@@ -944,8 +944,8 @@
                                                                         <constraint firstAttribute="height" constant="89" id="zS8-Pa-1SD"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5c-rK-RJm">
-                                                                    <rect key="frame" x="8" y="210" width="357" height="89"/>
+                                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5c-rK-RJm">
+                                                                    <rect key="frame" x="8" y="206" width="357" height="89"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJv-EX-cfz">
                                                                             <rect key="frame" x="0.0" y="0.0" width="101" height="89"/>
@@ -1640,6 +1640,83 @@
             </objects>
             <point key="canvasLocation" x="6902.3076923076924" y="820.37914691943126"/>
         </scene>
+        <!--Song List1-->
+        <scene sceneID="BHx-t8-NSR">
+            <objects>
+                <viewController storyboardIdentifier="SongList1" id="Vbl-UW-EMn" customClass="SongList1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1oJ-Fp-ZNm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6RR-wh-NG8">
+                                <rect key="frame" x="0.0" y="44" width="390" height="574"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="574" id="VOH-cm-S3L"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-f4-dvM">
+                                <rect key="frame" x="346" y="720" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="repeat-button" translatesAutoresizingMaskIntoConstraints="NO" id="OFX-9r-JOO">
+                                <rect key="frame" x="310" y="720" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downloads" translatesAutoresizingMaskIntoConstraints="NO" id="hri-6Y-doo">
+                                <rect key="frame" x="274" y="720" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-6n-bUc">
+                                <rect key="frame" x="16" y="720" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share (2)" translatesAutoresizingMaskIntoConstraints="NO" id="8eH-2D-pZz">
+                                <rect key="frame" x="52" y="720" width="28" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-4o-iRJ">
+                                <rect key="frame" x="16" y="623" width="358" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2Ms-gR-W32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im4-IL-6k5">
+                                <rect key="frame" x="20" y="662" width="350" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NyV-FT-slD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.36661857370000001" green="0.3666758537" blue="0.37075185779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xSc-xW-TgE"/>
+                        <color key="backgroundColor" red="0.05483476818" green="0.054849795999999999" blue="0.06040897965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xSc-xW-TgE" firstAttribute="trailing" secondItem="Im4-IL-6k5" secondAttribute="trailing" constant="20" id="1hk-d4-Wax"/>
+                            <constraint firstItem="Im4-IL-6k5" firstAttribute="leading" secondItem="xSc-xW-TgE" secondAttribute="leading" constant="20" id="AW4-Se-nHr"/>
+                            <constraint firstItem="6rh-4o-iRJ" firstAttribute="leading" secondItem="xSc-xW-TgE" secondAttribute="leading" constant="16" id="RWp-n1-e0q"/>
+                            <constraint firstItem="xSc-xW-TgE" firstAttribute="trailing" secondItem="6rh-4o-iRJ" secondAttribute="trailing" constant="16" id="RbX-cP-aft"/>
+                            <constraint firstItem="Im4-IL-6k5" firstAttribute="top" secondItem="6rh-4o-iRJ" secondAttribute="bottom" constant="5" id="Usz-NJ-1js"/>
+                            <constraint firstItem="6RR-wh-NG8" firstAttribute="trailing" secondItem="xSc-xW-TgE" secondAttribute="trailing" id="dww-Vf-NNf"/>
+                            <constraint firstItem="6rh-4o-iRJ" firstAttribute="top" secondItem="6RR-wh-NG8" secondAttribute="bottom" constant="5" id="gyJ-v8-Rqh"/>
+                            <constraint firstItem="6RR-wh-NG8" firstAttribute="top" secondItem="xSc-xW-TgE" secondAttribute="top" id="nAP-AG-DNf"/>
+                            <constraint firstItem="6RR-wh-NG8" firstAttribute="leading" secondItem="xSc-xW-TgE" secondAttribute="leading" id="zSb-YA-0SK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="6RR-wh-NG8" id="XxB-h0-FvV"/>
+                        <outlet property="singername" destination="Im4-IL-6k5" id="Ua9-HH-KQB"/>
+                        <outlet property="songName" destination="6rh-4o-iRJ" id="UOB-yN-z3U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEL-YM-8a9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7616.9230769230762" y="778.43601895734594"/>
+        </scene>
         <!--Account Page-->
         <scene sceneID="wff-ct-kB4">
             <objects>
@@ -2056,46 +2133,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sme-8S-bVb">
-                                <rect key="frame" x="0.0" y="130" width="390" height="592"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fh4-mJ-zwB">
-                                    <size key="itemSize" width="387" height="401"/>
-                                    <size key="estimatedItemSize" width="387" height="401"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell4" reuseIdentifier="cell" id="ugy-54-kcl" customClass="CollectionViewCell4" customModule="Reso" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iM9-SA-6ca">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="390"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9s-At-LUa">
-                                                    <rect key="frame" x="-290" y="0.0" width="868" height="380"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemTealColor"/>
-                                                    <color key="tintColor" name="AccentColor"/>
-                                                </imageView>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
-                                        <color key="tintColor" name="AccentColor"/>
-                                        <size key="customSize" width="390" height="390"/>
-                                        <connections>
-                                            <outlet property="bannerImg" destination="x9s-At-LUa" id="Au2-c0-Lsu"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="p9B-kW-Dk7" id="cCC-9J-iMU"/>
-                                    <outlet property="delegate" destination="p9B-kW-Dk7" id="yWT-nl-PeZ"/>
-                                </connections>
-                            </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are upgrading to a premium only service from the 11th of May2023 to elevate your social music streaming exprience! See more" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-cS-sht">
                                 <rect key="frame" x="16" y="30" width="358" height="95"/>
                                 <constraints>
@@ -2134,6 +2171,46 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sme-8S-bVb">
+                                <rect key="frame" x="0.0" y="133" width="390" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fh4-mJ-zwB">
+                                    <size key="itemSize" width="390" height="449"/>
+                                    <size key="estimatedItemSize" width="387" height="401"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell4" reuseIdentifier="cell" id="ugy-54-kcl" customClass="CollectionViewCell4" customModule="Reso" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="449"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iM9-SA-6ca">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="449"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9s-At-LUa">
+                                                    <rect key="frame" x="-246" y="9" width="840" height="449"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <size key="customSize" width="390" height="449"/>
+                                        <connections>
+                                            <outlet property="bannerImg" destination="x9s-At-LUa" id="Au2-c0-Lsu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="p9B-kW-Dk7" id="cCC-9J-iMU"/>
+                                    <outlet property="delegate" destination="p9B-kW-Dk7" id="yWT-nl-PeZ"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bwc-ci-o6Q"/>
                         <constraints>
@@ -2618,9 +2695,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
