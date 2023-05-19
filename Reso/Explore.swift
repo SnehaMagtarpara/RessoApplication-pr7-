@@ -272,13 +272,13 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         naviget.singer = singer
         naviget.image = dataimage
        
-        naviget.Song = songName
-        naviget.singer = singerName
-        naviget.image = image
+        naviget.Song1 = songName
+        naviget.singer1 = singerName
+        naviget.image1 = image
         
-        naviget.Song = song1
-        naviget.singer = singer1
-        naviget.image = Image1
+        naviget.Song2 = song1
+        naviget.singer2 = singer1
+        naviget.image2 = Image1
         navigationController?.pushViewController(naviget, animated: true)
     }
     
