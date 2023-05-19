@@ -231,15 +231,111 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigation(datanumber: singerName[indexPath.row], dataname: songName[indexPath.row], dataimage: image[indexPath.row]!)
+        if collectionView == self.cv
+        {
+            navigation(song: songName[indexPath.row], singer: singerName[indexPath.row], dataimage: image[indexPath.row]!, songName: songName2[indexPath.row], singerName: singername2[indexPath.row], image: image2[indexPath.row]!, song1: songName3[indexPath.row], singer1:  singername3[indexPath.row], Image1: image3[indexPath.row]!)
+           
+        }
+        else if collectionView == self.cv2{
+            navigation(song2: song4[indexPath.row], singer2: singer4[indexPath.row], image2: img4[indexPath.row]!)
+        }
+        else if collectionView == self.cv3
+        {
+            navigation(song3: songName5[indexPath.row], singer3: singerName5[indexPath.row], image3: img5[indexPath.row]!)
+        }
+        else if collectionView == self.cv4
+        {
+            navigation(singer4: singerName6[indexPath.row], image4: img6[indexPath.row]!)
+        }
+        else if collectionView == self.cv5
+        {
+            navigation(song5:songname7[indexPath.row] , singer5: singerName7[indexPath.row], image5: im1[indexPath.row]!, song0: songname8[indexPath.row], singer0: singerName8[indexPath.row], image0: im2[indexPath.row]!, song00: songName9[indexPath.row], singer00: singername9[indexPath.row], image00: im3[indexPath.row]!)
+        }
+        else if collectionView == self.cv6
+        {
+            navigation(song6: song7[indexPath.row], image6: image7[indexPath.row]!)
+            
+        }
+        else
+        {
+            navigation(song7: song8[indexPath.row], singer7: singer8[indexPath.row], image7: image8[indexPath.row]!)
+           
+        }
+        
+       
     }
    
-    func navigation(datanumber:String,dataname:String,dataimage:UIImage)
+    func navigation(song:String,singer:String,dataimage:UIImage,songName:String,singerName:String,image:UIImage,song1:String,singer1:String,Image1:UIImage)
     {
-        let naviget = storyboard?.instantiateViewController(withIdentifier: "ViewController1") as! ViewController1
-        naviget.number = datanumber
-        naviget.name = dataname
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList1") as! SongList1
+        naviget.Song = song
+        naviget.singer = singer
         naviget.image = dataimage
+       
+        naviget.Song = songName
+        naviget.singer = singerName
+        naviget.image = image
+        
+        naviget.Song = song1
+        naviget.singer = singer1
+        naviget.image = Image1
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    
+    func navigation(song2:String,singer2:String,image2:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList2") as! SongList2
+        naviget.Song = song2
+        naviget.singer = singer2
+        naviget.image = image2
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    func navigation(song3:String,singer3:String,image3:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList3") as! SongList3
+        naviget.Song = song3
+        naviget.singer = singer3
+        naviget.image = image3
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    func navigation(singer4:String,image4:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList4") as! SongList4
+        
+        naviget.singer = singer4
+        naviget.image = image4
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    func navigation(song5:String,singer5:String,image5:UIImage,song0:String,singer0:String,image0:UIImage,song00:String,singer00:String,image00:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList5") as! SongList5
+        naviget.Song = song5
+        naviget.singer = singer5
+        naviget.image = image5
+        
+        naviget.Song = song0
+        naviget.singer = singer0
+        naviget.image = image0
+        
+        naviget.Song = song00
+        naviget.singer = singer00
+        naviget.image = image00
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    func navigation(song6:String,image6:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList6") as! SongList6
+        naviget.Song = song6
+        
+        naviget.image = image6
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    func navigation(song7:String,singer7:String,image7:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList7") as! SongList7
+        naviget.Song = song7
+        naviget.singer = singer7
+        naviget.image = image7
         navigationController?.pushViewController(naviget, animated: true)
     }
 
