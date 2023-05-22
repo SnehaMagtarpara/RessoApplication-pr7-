@@ -46,7 +46,7 @@ class SongList2: UIViewController {
     func navigation()
     {
         let n = storyboard?.instantiateViewController(withIdentifier: "Explore") as! Explore
-        navigationController?.pushViewController(n, animated: true)
+        navigationController?.popViewController(animated: true)
     }
     
     

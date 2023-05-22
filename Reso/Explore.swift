@@ -280,7 +280,8 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         naviget.singer2 = singer1
         naviget.image2 = Image1
         navigationController?.pushViewController(naviget, animated: true)
-    }
+    } 
+    
     
     func navigation(song2:String,singer2:String,image2:UIImage)
     {
