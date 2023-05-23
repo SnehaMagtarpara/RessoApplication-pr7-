@@ -48,6 +48,18 @@ class historyPop: UIViewController,UICollectionViewDelegate,UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 374, height: 110)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigation(song: songName[indexPath.row], singer: singerName[indexPath.row], image: image[indexPath.row]!)
+    }
+    
+    func navigation(song:String,singer:String,image:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "HistoryPopView") as! HistoryPopView
+        naviget.Song = song
+        naviget.singer = singer
+        naviget.image = image
+        navigationController?.pushViewController(naviget, animated: true)
+    }
 
 
 }

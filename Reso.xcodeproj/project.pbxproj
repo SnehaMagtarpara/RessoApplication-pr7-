@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3115C982A1CA2AA00B01F93 /* HistoryPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3115C972A1CA2AA00B01F93 /* HistoryPopView.swift */; };
+		D3115C9A2A1CA7F600B01F93 /* CollectionViewCell12.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3115C992A1CA7F600B01F93 /* CollectionViewCell12.swift */; };
 		D32097642A0CAB200084EAAD /* CollectionViewCell5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32097632A0CAB200084EAAD /* CollectionViewCell5.swift */; };
 		D32640612A1344530012BD52 /* CollectionViewCell8.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32640602A1344530012BD52 /* CollectionViewCell8.swift */; };
 		D32640632A134B410012BD52 /* CollectionViewCell9.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32640622A134B410012BD52 /* CollectionViewCell9.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3115C972A1CA2AA00B01F93 /* HistoryPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPopView.swift; sourceTree = "<group>"; };
+		D3115C992A1CA7F600B01F93 /* CollectionViewCell12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell12.swift; sourceTree = "<group>"; };
 		D32097632A0CAB200084EAAD /* CollectionViewCell5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell5.swift; sourceTree = "<group>"; };
 		D32640602A1344530012BD52 /* CollectionViewCell8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell8.swift; sourceTree = "<group>"; };
 		D32640622A134B410012BD52 /* CollectionViewCell9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell9.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				D367F63129F26A5A00D8B4A7 /* SceneDelegate.swift */,
 				D367F63329F26A5A00D8B4A7 /* ViewController.swift */,
 				D367F63529F26A5A00D8B4A7 /* Main.storyboard */,
+				D3115C992A1CA7F600B01F93 /* CollectionViewCell12.swift */,
+				D3115C972A1CA2AA00B01F93 /* HistoryPopView.swift */,
 				D36DB2D42A1748B600A16564 /* SongList2.swift */,
 				D36DB2D22A17458400A16564 /* SongList1.swift */,
 				D32640602A1344530012BD52 /* CollectionViewCell8.swift */,
@@ -277,10 +283,12 @@
 				D367F63029F26A5A00D8B4A7 /* AppDelegate.swift in Sources */,
 				D3C3A24F29F333CD00ED427C /* ContinuePhone.swift in Sources */,
 				D38D4EBA2A04D4AE0093615E /* CollectionViewCell4.swift in Sources */,
+				D3115C9A2A1CA7F600B01F93 /* CollectionViewCell12.swift in Sources */,
 				D3CC135D2A14A5FC00BE1C4A /* ArtistPop.swift in Sources */,
 				D39956F729F97BD400A7729F /* CollectionViewCell2.swift in Sources */,
 				D3CC135B2A14969800BE1C4A /* CollectionViewCell11.swift in Sources */,
 				D3CC13612A14ABB200BE1C4A /* historyPop.swift in Sources */,
+				D3115C982A1CA2AA00B01F93 /* HistoryPopView.swift in Sources */,
 				D3B9FAE529FAC88900258F26 /* TabBar.swift in Sources */,
 				D3CC135F2A14AB0000BE1C4A /* Downloadpop.swift in Sources */,
 				D367F63A29F26A5A00D8B4A7 /* Reso.xcdatamodeld in Sources */,

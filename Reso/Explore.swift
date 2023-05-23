@@ -14,15 +14,14 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     
     @IBOutlet weak var cv3: UICollectionView!
     @IBOutlet weak var cv2: UICollectionView!
-    
     @IBOutlet weak var cv7: UICollectionView!
     @IBOutlet weak var cv6: UICollectionView!
     @IBOutlet weak var cv5: UICollectionView!
-    
     @IBOutlet weak var cv4: UICollectionView!
     @IBOutlet weak var cv: UICollectionView!
     @IBOutlet weak var songcatchlabel: UILabel!
     
+    @IBOutlet weak var cv8: UIView!
     
     
     
@@ -105,11 +104,14 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return image7.count
         }
-        else
+        else if collectionView == self.cv7
         {
             return image8.count
         }
-            
+        else
+        {
+            return 0
+        }
         
       
     }
@@ -186,7 +188,7 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell9
             
         }
-        else
+        else if collectionView == self.cv7
         {
             let cell10 = cv7.dequeueReusableCell(withReuseIdentifier: "cell10", for: indexPath) as! CollectionViewCell11
             cell10.image8.image = image8[indexPath.row]
@@ -196,6 +198,17 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell10
             
         }
+        else
+        {
+            let cell11 = cv7.dequeueReusableCell(withReuseIdentifier: "cell11", for: indexPath) as! CollectionViewCell12
+            cell11.img12.image = im[indexPath.row]
+            cell11.songLabel12.text = song8[indexPath.row]
+            cell11.singerlabel12.text = singer8[indexPath.row]
+           
+            return cell11
+            
+        }
+        
         
         
     }
@@ -223,6 +236,10 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return CGSize(width: 147, height: 165)
             
+        }
+        else if collectionView == self.cv7
+        {
+            return CGSize(width: 147, height: 186)
         }
         else
         {
@@ -327,7 +344,6 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     {
         let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList6") as! SongList6
         naviget.Song = song6
-        
         naviget.image = image6
         navigationController?.pushViewController(naviget, animated: true)
     }
@@ -339,5 +355,14 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         naviget.image = image7
         navigationController?.pushViewController(naviget, animated: true)
     }
+    func navigation(song8:String,singer8:String,image8:UIImage)
+    {
+        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList8") as! SongList8
+        naviget.Song = song8
+        naviget.singer = singer8
+        naviget.image = image8
+        navigationController?.pushViewController(naviget, animated: true)
+    }
+    
 
 }
