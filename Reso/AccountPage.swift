@@ -31,7 +31,7 @@ class AccountPage: UIViewController,UIImagePickerControllerDelegate & UINavigati
         addButton.isHidden = true
     }
     
-    
+   
     @IBAction func arrorButtonAction(_ sender: Any) {
         let n = storyboard?.instantiateViewController(withIdentifier: "PremiumPage") as! PremiumPage
         navigationController?.pushViewController(n, animated: true)
@@ -62,24 +62,11 @@ class AccountPage: UIViewController,UIImagePickerControllerDelegate & UINavigati
             navigation.mynev = self.navigationController
             present(navigation, animated: true, completion: nil)
         }
-        
-        
-        
-        
-        
+   
     }
-    
-    
-    
-    
-    
-    @IBAction func navigetArrowAction(_ sender: Any) {
-        let n = storyboard?.instantiateViewController(withIdentifier: "PremiumPage") as! PremiumPage
-        navigationController?.pushViewController(n, animated: true)
-    }
-    
+  
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        img.image = info[.editedImage] as! UIImage
+        img.image = info[.editedImage] as? UIImage
         dismiss(animated: true, completion: nil)
     }
     

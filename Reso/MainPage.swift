@@ -12,9 +12,6 @@ class MainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
     @IBOutlet weak var cv: UICollectionView!
     
     
-    
-    @IBOutlet weak var progressBar: UIProgressView!
-    
     var img = [UIImage(named: "31"),UIImage(named: "32"),UIImage(named: "33"),UIImage(named: "34"),UIImage(named: "35"),UIImage(named: "36"),UIImage(named: "37"),UIImage(named: "38"),UIImage(named: "39"),UIImage(named: "40"),UIImage(named: "41"),UIImage(named: "42"),UIImage(named: "43"),UIImage(named: "44"),UIImage(named: "45"),UIImage(named: "46"),UIImage(named: "47"),UIImage(named: "48"),UIImage(named: "49"),UIImage(named: "50")]
     
     var songName = ["Halki Si Barsaat","12 Ladke","Thoda Thoda Pyaar","Leja Leja Re","Malang Sajna","Tera Fitoor","Channa Ve","Ishq Tera","Man Meri Jaan","Bhagat Aadmi","Pal Pal Dil Ke Pass","Rabba Janda","Mast Aankhein","Tum Hi Ho","Rab Manneya","Shiddat","Pehla Pyaar","Maiyaa Mennu","Duniya","Hawa Banke"]
@@ -30,13 +27,6 @@ class MainPage: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
     
     
  
-    @IBAction func forYouButtonAction(_ sender: UIButton) {
-        
-            let navigation = storyboard?.instantiateViewController(withIdentifier:"ForYou" ) as! ForYou
-            navigation.mynev = self.navigationController
-            present(navigation, animated: true, completion: nil)
-
-    }
     
         
     

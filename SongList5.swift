@@ -13,7 +13,7 @@ class SongList5: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var singerName: UILabel!
     @IBOutlet weak var songName: UILabel!
-    var rime = Timer()
+    var time = Timer()
     var image = UIImage()
     var Song = String()
     var singer = String()
@@ -32,7 +32,7 @@ class SongList5: UIViewController {
       
         self.progressBar.progress = a
     
-        time = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { (timer) in
+          time = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { (timer) in
             a += 0.01
             self.progressBar.progress = a
             if self.progressBar.progress == 1.0

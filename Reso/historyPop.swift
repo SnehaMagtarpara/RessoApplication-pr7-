@@ -28,6 +28,11 @@ class historyPop: UIViewController,UICollectionViewDelegate,UICollectionViewData
         }
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return image.count
     }
