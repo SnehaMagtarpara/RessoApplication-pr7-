@@ -12,6 +12,7 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
     
    
     
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var cv3: UICollectionView!
     @IBOutlet weak var cv2: UICollectionView!
     @IBOutlet weak var cv7: UICollectionView!
@@ -71,11 +72,15 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
    
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         songcatchlabel.layer.cornerRadius = 22
         songcatchlabel.layer.masksToBounds = true
-        
+        button.layer.borderColor = UIColor.gray.cgColor
+        button.layer.cornerRadius = 15
+        button.layer.masksToBounds = true
+        button.layer.borderWidth = 2
     }
     
     
@@ -104,14 +109,11 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         {
             return image7.count
         }
-        else if collectionView == self.cv7
+        else
         {
             return image8.count
         }
-        else
-        {
-            return 0
-        }
+      
         
       
     }
@@ -188,7 +190,7 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell9
             
         }
-        else if collectionView == self.cv7
+        else
         {
             let cell10 = cv7.dequeueReusableCell(withReuseIdentifier: "cell10", for: indexPath) as! CollectionViewCell11
             cell10.image8.image = image8[indexPath.row]
@@ -198,19 +200,6 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return cell10
             
         }
-        else
-        {
-            let cell11 = cv7.dequeueReusableCell(withReuseIdentifier: "cell11", for: indexPath) as! CollectionViewCell12
-            cell11.img12.image = im[indexPath.row]
-            cell11.songLabel12.text = song8[indexPath.row]
-            cell11.singerlabel12.text = singer8[indexPath.row]
-           
-            return cell11
-            
-        }
-        
-        
-        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.cv
@@ -237,20 +226,17 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
             return CGSize(width: 147, height: 165)
             
         }
-        else if collectionView == self.cv7
-        {
-            return CGSize(width: 147, height: 186)
-        }
         else
         {
             return CGSize(width: 147, height: 186)
         }
+        
     
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.cv
         {
-            navigation(song: songName[indexPath.row], singer: singerName[indexPath.row], dataimage: image[indexPath.row]!, songName: songName2[indexPath.row], singerName: singername2[indexPath.row], image: image2[indexPath.row]!, song1: songName3[indexPath.row], singer1:  singername3[indexPath.row], Image1: image3[indexPath.row]!)
+            navigation(song: songName[indexPath.row], singer: singerName[indexPath.row], dataimage: image[indexPath.row]!)
            
         }
         else if collectionView == self.cv2{
@@ -282,20 +268,13 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
        
     }
    
-    func navigation(song:String,singer:String,dataimage:UIImage,songName:String,singerName:String,image:UIImage,song1:String,singer1:String,Image1:UIImage)
+    func navigation(song:String,singer:String,dataimage:UIImage)
     {
         let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList1") as! SongList1
         naviget.Song = song
         naviget.singer = singer
         naviget.image = dataimage
-       
-        naviget.Song1 = songName
-        naviget.singer1 = singerName
-        naviget.image1 = image
-        
-        naviget.Song2 = song1
-        naviget.singer2 = singer1
-        naviget.image2 = Image1
+      
         navigationController?.pushViewController(naviget, animated: true)
     } 
     
@@ -353,14 +332,6 @@ class Explore: UIViewController,UICollectionViewDelegate,UICollectionViewDataSou
         naviget.Song = song7
         naviget.singer = singer7
         naviget.image = image7
-        navigationController?.pushViewController(naviget, animated: true)
-    }
-    func navigation(song8:String,singer8:String,image8:UIImage)
-    {
-        let naviget = storyboard?.instantiateViewController(withIdentifier: "SongList8") as! SongList8
-        naviget.Song = song8
-        naviget.singer = singer8
-        naviget.image = image8
         navigationController?.pushViewController(naviget, animated: true)
     }
     
